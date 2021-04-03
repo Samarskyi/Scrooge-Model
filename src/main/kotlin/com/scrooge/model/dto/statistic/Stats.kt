@@ -1,5 +1,6 @@
 package com.scrooge.model.dto.statistic
 
+import com.scrooge.model.entity.Deal
 import java.util.*
 
 data class TotalByBase(val base: String, val deals: Int, val total: Double)
@@ -16,3 +17,5 @@ data class StatisticResponse(
 		val monthly: TotalByBase, val monthlyDetails: List<DetailsByDateAndBase>,
 		val total: TotalByBase
 )
+
+data class TotalProfitAndDealsResponse(val total: TotalByBase, val deals: List<Deal>)
