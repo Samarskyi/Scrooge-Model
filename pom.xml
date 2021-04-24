@@ -5,7 +5,7 @@
 
 	<groupId>com.scrooge</groupId>
 	<artifactId>model</artifactId>
-	<version>1.0.11</version>
+	<version>1.0.12</version>
 	<name>model</name>
 	<description>Scrooge Model</description>
 
@@ -34,9 +34,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>co.oril</groupId>
-			<artifactId>binance-api-client-java</artifactId>
-			<version>1.0.4</version>
+			<groupId>com.scrooge</groupId>
+			<artifactId>binance-java-sdk</artifactId>
+			<version>1.0.6</version>
 		</dependency>
 	</dependencies>
 
