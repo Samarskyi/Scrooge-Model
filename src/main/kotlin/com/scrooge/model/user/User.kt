@@ -1,6 +1,7 @@
 package com.scrooge.model.user
 
 import com.fasterxml.jackson.annotation.JsonIgnore
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.scrooge.model.enums.AccountStatus
 import com.scrooge.model.enums.BotStatus
 import com.scrooge.model.enums.Role
@@ -10,6 +11,7 @@ import org.springframework.data.mongodb.core.index.Indexed
 import org.springframework.data.mongodb.core.mapping.Document
 
 @Document(collection = "users")
+@JsonIgnoreProperties(ignoreUnknown = true)
 data class User(
 	@Id val id: ObjectId = ObjectId(),
 	@Indexed(unique = true) val email: String,
