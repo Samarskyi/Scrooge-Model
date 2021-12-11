@@ -8,7 +8,7 @@ package com.scrooge.model.trade
  * @maxCoinBalancePercent Represent max possible open deal value in base currency
  */
 data class TradingConfig(
-		var profit: Double = 0.8,
+		var profit: Double = 3.0,
 		var tradeMultiply: Int = 1,
 		var fee: Double = 0.1,
 		var belowAverage: Double = 1.0,
