@@ -16,6 +16,9 @@ data class User(
 	@Id val id: ObjectId = ObjectId(),
 	@Indexed(unique = true) val email: String,
 	@JsonIgnore var password: String = "",
+	val firstName: String = "",
+	val lastName: String = "",
+	val phone: String = "",
 	var apiKey: String = "",
 	var apiSecret: String = "",
 	@Deprecated("Use 'telegramId'")
