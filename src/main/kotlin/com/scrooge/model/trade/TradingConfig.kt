@@ -1,5 +1,7 @@
 package com.scrooge.model.trade
 
+import com.scrooge.model.dto.BaseAsset
+
 /**
  * @profit Minimum pure profit per deal
  * @tradeMultiply Represent multiplication factor of the minimum order value
@@ -15,7 +17,9 @@ data class TradingConfig(
 		var emaPeriod: Int = 3,
 		val fixedProfit: Boolean = true,
 		val dynamicProfit: Boolean = false,
-		val stopLossProfit: Boolean = false) {
+		val stopLossProfit: Boolean = false,
+		val amountForTrading: List<BaseAsset> = listOf()
+) {
 
 	fun fullFee() = fee * 2
 
