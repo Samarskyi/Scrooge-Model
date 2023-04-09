@@ -30,5 +30,6 @@ data class User(
 	@JsonIgnore var botIPAddress: String = "",
 	val roles: List<Role> = mutableListOf(Role.ROLE_CLIENT),
 	var status: AccountStatus = AccountStatus.ACTIVE,
-	var botStatus: BotStatus? = null
+	var botStatus: BotStatus? = null,
+	var multiUserServer: Boolean = false
 )
