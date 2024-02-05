@@ -15,6 +15,7 @@ data class OpenDealInfoDTO(
 		val qty: String,
 		val volume: String,
 		val openReason: BuyReason,
+		var closePrice: String? = null,
 		val orders: LinkedHashSet<Order> = LinkedHashSet(),
 		val trades: LinkedHashSet<Trade> = LinkedHashSet()
 )

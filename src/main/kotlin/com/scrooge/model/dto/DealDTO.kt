@@ -1,5 +1,6 @@
 package com.scrooge.model.dto
 
+import com.binance.api.client.domain.account.Order
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.scrooge.model.enums.BuyReason
 import java.util.*
@@ -19,5 +20,6 @@ open class DealDTO(
 		open var openReason: BuyReason = BuyReason.Non,
 		open var openDate: Date = Date(),
 		open var closeDate: Date = Date(),
-		open var trades: List<TradeDTO> = listOf()
+		open var trades: List<TradeDTO> = listOf(),
+		open var orders: List<Order> = listOf()
 )
